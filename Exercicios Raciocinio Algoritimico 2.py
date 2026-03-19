@@ -27,6 +27,7 @@ temperatura = float(input('Qual a temperatura ambiente: '))
 if (temperatura > 25):
     print ('Esta quente')
 elif 24 >= temperatura >= 18:
+# Colocar a temperatura entre o 18 e 24 funciona no python mas em outras linguagens ele nao funciona!!!
     print ('Esta ameno')
 else:
     print ('Esta frio')
@@ -40,8 +41,15 @@ else:
 
 time.sleep(1)
 idade = int(input('Qual sua idade: '))
-ingresso = input('Voce tem ingresso? (s/n): ')
-if (idade >= 18 and ingresso == 's'):
+ingresso = input('Voce tem ingresso? (s/n): ').lower()
+#Esse .lower() deixa tudo minusculo e ai o usuario pode digitar tanto S ou s e o programa vai entender 
+
+if ingresso == 's':
+    ingresso = True
+elif ingresso == 'n':
+    ingresso = False
+#Trasformar em boleano
+if (idade >= 18 and ingresso):
     print ('Voce pode entrar')
 else:
     print ('Voce nao pode entrar')
