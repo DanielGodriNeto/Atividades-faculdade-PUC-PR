@@ -15,4 +15,3 @@ if (temperatura < 25):
     print ('Esta quente')
 else:
     print ('Esta frio')
-print('teste')
