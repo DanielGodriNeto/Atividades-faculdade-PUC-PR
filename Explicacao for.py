@@ -1,18 +1,18 @@
 # #1 Tarefa basico do "for" em Python.
 
-# for i in range(1, 11):
-#     print(i)
+for i in range(1, 11):
+    print(i)
 
-# for i in range(10, 0, -1):
-#     print(i)
+for i in range(10, 0, -1):
+    print(i)
 
 #     #2 Tarefa comparacao com "for" em Python.
 
-# for i in range(1, 11):
-#     if i % 2 != 0:
-#         print(f"{i} é ímpar.")
-#     else:
-#         print(f"{i} é par.")
+for i in range(1, 11):
+    if i % 2 != 0:
+        print(f"{i} é ímpar.")
+    else:
+        print(f"{i} é par.")
 
 #Peça ao usuário que digite uma
 #palavra que comece com uma

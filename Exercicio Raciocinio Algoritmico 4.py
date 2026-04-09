@@ -104,3 +104,32 @@ for i in range(10):
         impares += 1
 print(f"Quantidade de números pares: {pares}")
 print(f"Quantidade de números ímpares: {impares}")
+
+
+# Calculdadora PEMDAS Desafio 
+#Nível 4: Muito Difícil
+
+# O programa deve aceitar uma expressão completa, incluindo:
+
+# vários números
+# vários operadores
+# uso de parênteses
+# Exemplos:
+
+# 2 * (3 + 5 - 1)
+# (10 - 2) * 3
+# 8 + 2 * (4 - 1)
+# Nesta versão, o programa deve resolver corretamente a expressão considerando:
+
+# os parênteses
+# a prioridade entre operadores
+
+def calcular_expressao(expressao):
+    try:
+        resultado = eval(expressao)
+        return resultado
+    except Exception as e:
+        return f"Erro ao calcular a expressão: {e}"
+expressao = input("Digite uma expressão matemática: ")
+resultado = calcular_expressao(expressao) 
+print(f"O resultado da expressão '{expressao}' é: {resultado}")
