@@ -1,0 +1,51 @@
+#Exercicio 1 criar uma lista de numeros e imprimir a lista
+
+# numeros = [1, 2, 3, 4, 5]
+# print(numeros[0])
+# print(numeros[1])
+# print(numeros[2])
+# print(numeros[3])
+# print(numeros[4])
+
+
+#Exercicio 2 criar uma lista de numeros e modificar os numeros da lista e imprimir a lista modificada
+
+# print_numero = 0 numeros = [5, 7, 12, 2, 9, 21] 
+# numeros[1] = 17 
+# numeros[3] = 22
+# print (numeros) 
+
+# numeros[2] = 1 
+# numeros[4] = 29 
+# print (numeros)
+
+#Exercicio 3 multiplicar o primeiro numero da lista pelo ultimo numero da lista e imprimir o resultado
+
+# numeros = [2, 7, 12, 2, 9, 21]
+
+# numeros[1] = 17
+# numeros[3] = 22
+# numeros[2] = 1
+# numeros[4] = 29
+
+# multiplicacao = numeros[0] * numeros[5]
+
+# print(numeros)
+
+#Exercicio 4 ultilize while e for para imprimir valores do vetor vezes 2
+
+
+#for
+numeros = [5, 17, 1, 22, 29, 21]
+for i in range(6):
+    numeros[i] = numeros[i] * 2
+    print(numeros[i])
+
+
+#while
+numeros = [5, 17, 1, 22, 29, 21]
+i = 0
+while i < 6:
+    numeros[i] = numeros[i] * 2
+    print(numeros[i])
+    i += 1
